@@ -22,7 +22,7 @@ int main()
 void demonstration()
 {
     cout << "Demonstrating what different parts of this code can do." << endl;
-    cout << "  making an empty graph with 5 vertices, then adding edges" << endl;
+    cout << "  making an empty graph with 5 vertices, then adding some edges" << endl;
     GraphAdjMatrix g_d_1(5);
     g_d_1.print();
     g_d_1.add_edge(0, 3);
@@ -30,7 +30,7 @@ void demonstration()
     g_d_1.add_edge(2, 4);
     g_d_1.print();
     cout << "  Is g_d_1 connected? " << g_d_1.connected() << endl;
-    cout << "  What are the degrees of all the vertices of g_d_1?" << endl;
+    cout << "  List the degrees of all the vertices of g_d_1." << endl;
     vector<int> g_d_1_dov = g_d_1.deg_of_vcs();
     cout << "  [";
     for (auto& i : g_d_1_dov)
